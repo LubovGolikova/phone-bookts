@@ -21,7 +21,11 @@ export const Login = () => {
             });
         };
     };
-    console.log(email, password)
+    console.log(email, password);
+
+    const checkLogin = () => {
+        console.log("checklogin");
+    };
 
 
     return (
