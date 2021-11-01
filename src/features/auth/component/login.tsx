@@ -1,11 +1,7 @@
 import {Col, Button, Form, FormGroup, Label, Input} from 'reactstrap';
-import {Link, useHistory} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 import {ROUTES} from "../../../constants/routes";
-import React ,{ useState } from "react";
-// import {loginSuccess, authSelector} from ".
-// import {useDispatch, useSelector} from "react-redux";
-
-
+import React, {useState} from "react";
 
 export const Login = () => {
 
@@ -14,7 +10,7 @@ export const Login = () => {
     [formState, setFormState] = useState({email: '', password: ''});
     let {email, password} = formState;
 
-    const onValueChange = (name:string) => {
+    const onValueChange = (name: string) => {
         return (e: React.FormEvent<HTMLInputElement>) => {
             setFormState((prevState) => {
                 return ({...prevState, [name]: e.currentTarget});
@@ -23,16 +19,15 @@ export const Login = () => {
     };
     console.log(email, password);
 
-    const checkLogin = () => {
-        console.log("checklogin");
-    };
-
+    const checkLogin = (): void => {
+        console.log("checklogin!!!")
+    }
 
     return (
         <>
             <div className="container">
                 <h1>Login</h1>
-                <Form onSubmit={checkLogin} >
+                <Form onSubmit={checkLogin}>
                     <FormGroup row className="mt-3">
                         <Label for="email" sm={1}>Email</Label>
                         <Col sm={3}>

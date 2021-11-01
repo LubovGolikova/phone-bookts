@@ -1,6 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import {ROUTES} from "../../constants/routes";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const RouterLink = () => {
     return (

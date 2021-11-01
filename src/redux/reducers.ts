@@ -1,9 +1,9 @@
 import {combineReducers} from "@reduxjs/toolkit";
-// import auth from '../features/auth/redux/slice';
+import auth from '../features/auth/redux/slice';
 
 
 const reducers = combineReducers({
-    // auth
+    auth
 });
 
 export default reducers;
